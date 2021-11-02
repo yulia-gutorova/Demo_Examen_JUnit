@@ -1,0 +1,49 @@
+
+-----TestListener started-----
+
+
+Date: Mon Nov 01 17:57:44 CET 2021
+
+Tests run  classes
+
+Class: >>>>> InputFormsTest
+
+     Test started: >>>>> Open a website(InputFormsTest)
+     Tests finished 
+--------------------------------------
+
+Class: >>>>> InputFormsTest
+
+     Test started: >>>>> Test that elements are present on webpage(InputFormsTest)
+     Tests finished 
+--------------------------------------
+
+Class: >>>>> InputFormsTest
+
+     Test started: >>>>> Single Input Field(InputFormsTest)
+     Tests finished 
+--------------------------------------
+
+Class: >>>>> InputFormsTest
+
+     Test started: >>>>> Enter two messages(InputFormsTest)
+     Tests finished 
+--------------------------------------
+
+Class: >>>>> InputFormsTest
+
+     Test started: >>>>> Test to illustrate that test is failed(InputFormsTest)
+
+>>>>> Tests failure  Test to illustrate that test is failed(InputFormsTest): expected: <true> but was: <false>
+     Tests finished 
+--------------------------------------
+>>>>> Tests disabled: Test to illustrate that test is disabled(InputFormsTest)
+--------------------------------------
+
+Result of the test run: false
+Run time: 22418 ms
+Number of tests in test suite: 6
+Number of tests executed: 5
+Number of tests succeed: 4
+Failure count: 1
+Ignored count: 1

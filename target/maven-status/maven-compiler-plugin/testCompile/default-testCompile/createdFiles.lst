@@ -1,0 +1,8 @@
+pageObjectModels\locators\InputFormPage.class
+base\SetUp.class
+pageObjectModels\util\InputFormUtil.class
+listeners\Listener.class
+base\ElementsInteractingMethods.class
+tests\testSuite.class
+base\CommonMethods.class
+tests\InputFormsTest.class
