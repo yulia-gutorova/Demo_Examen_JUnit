@@ -128,7 +128,6 @@ public class ElementsInteractingMethods extends SetUp {
         wait.until(ExpectedConditions.visibilityOf(element));
     }
 
-
     /*---------------------------------------------------------------------
      * Method isVisible() to verify that element is displayed
      *---------------------------------------------------------------------*/

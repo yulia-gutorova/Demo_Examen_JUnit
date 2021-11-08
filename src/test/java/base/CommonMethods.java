@@ -118,4 +118,18 @@ public class CommonMethods {
         //System.out.println("URL is: " + url);
         return url;
     }
+
+    /*---------------------------------------------------------------------
+     * Method getDataSourcesFromProperties() to read data sources from properties by key
+     *---------------------------------------------------------------------*/
+    public static String getDataSourcesFromProperties(String key) throws IOException {
+
+        Properties dataSourceProps = new Properties();
+        dataSourceProps.load(new FileInputStream("C:\\Users\\Yulia\\IdeaProjects\\Demo_Examen_JUnit\\src\\test\\java\\dataSource.properties"));
+
+        String dataSourse = dataSourceProps.getProperty(key);
+        //System.out.println("URL is: " + url);
+        return dataSourse;
+    }
+
 }

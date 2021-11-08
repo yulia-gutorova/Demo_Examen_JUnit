@@ -2,7 +2,7 @@
 -----TestListener started-----
 
 
-Date: Tue Nov 02 10:29:33 CET 2021
+Date: Mon Nov 08 15:49:37 CET 2021
 
 Tests run  classes
 
@@ -41,7 +41,7 @@ Class: >>>>> InputFormsTest
 --------------------------------------
 
 Result of the test run: false
-Run time: 24951 ms
+Run time: 24238 ms
 Number of tests in test suite: 6
 Number of tests executed: 5
 Number of tests succeed: 4

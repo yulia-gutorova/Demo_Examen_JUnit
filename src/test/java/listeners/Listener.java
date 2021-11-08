@@ -29,7 +29,7 @@ public class Listener extends RunListener{
 
     public static void main(String[] args) throws IOException {
 
-        System.out.println( "\n-----TestListener-----\n" );
+        System.out.println( "\n\n----TestListener-----\n" );
         write_to_file.println("\n-----TestListener started-----\n" );
         Date date=java.util.Calendar.getInstance().getTime();
         write_to_file.println("\nDate: " + date);
