@@ -27,17 +27,6 @@ public class CommonMethods {
         }
     }
 
-    /*    *//*---------------------------------------------------------------------
-     * Create a mechanism to write information in result file
-     *---------------------------------------------------------------------*//*
-    public static PrintWriter write_to_file;
-    static {
-        try {
-            write_to_file = new PrintWriter( new BufferedWriter(new FileWriter("C:\\Users\\Yulia\\IdeaProjects\\Demo_Examen_JUnit\\target\\results.txt")));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }*/
 
     /*---------------------------------------------------------------------
      * Method printToLogFile() to print information in the log file

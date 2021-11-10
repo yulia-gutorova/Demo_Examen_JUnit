@@ -26,6 +26,7 @@ public class SetUp {
     public static void setUpp() throws FileNotFoundException {
 
         writer = new PrintWriter(new File("src/test/java/resources/logs/TestLLog.log"));
+
         printToLogFile("----- Demo_Examen_Junit run -----", "");
 
         //writer.println("----- Demo_Examen_Junit run -----");

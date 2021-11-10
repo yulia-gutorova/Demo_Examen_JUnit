@@ -21,7 +21,8 @@ public class Listener extends RunListener{
 
     static {
         try {
-            write_to_file = new PrintWriter( new BufferedWriter(new FileWriter("C:\\Users\\Yulia\\IdeaProjects\\Demo_Examen_JUnit\\target\\results.txt")));
+            write_to_file = new PrintWriter( new BufferedWriter(new FileWriter("C:\\Users\\Yulia\\IdeaProjects\\Demo_Examen_JUnit\\src\\test\\java\\resources\\logs\\results.txt")));
+            //C:\Users\Yulia\IdeaProjects\Demo_Examen_JUnit\src\test\java\resources\logs\results.txt
         } catch (IOException e) {
             e.printStackTrace();
         }
