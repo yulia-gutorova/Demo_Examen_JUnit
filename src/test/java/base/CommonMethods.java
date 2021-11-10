@@ -101,7 +101,7 @@ public class CommonMethods {
     public static String getURLFromProperties(String key) throws IOException {
 
         Properties urlProps = new Properties();
-        urlProps.load(new FileInputStream("C:\\Users\\Yulia\\IdeaProjects\\Demo_Examen_JUnit\\src\\test\\java\\pageURLs.properties"));
+        urlProps.load(new FileInputStream("src\\test\\java\\pageURLs.properties"));
 
         String url = urlProps.getProperty(key);
         //System.out.println("URL is: " + url);
@@ -114,7 +114,7 @@ public class CommonMethods {
     public static String getDataSourcesFromProperties(String key) throws IOException {
 
         Properties dataSourceProps = new Properties();
-        dataSourceProps.load(new FileInputStream("C:\\Users\\Yulia\\IdeaProjects\\Demo_Examen_JUnit\\src\\test\\java\\dataSource.properties"));
+        dataSourceProps.load(new FileInputStream("src\\test\\java\\dataSource.properties"));
 
         String dataSourse = dataSourceProps.getProperty(key);
         //System.out.println("URL is: " + url);

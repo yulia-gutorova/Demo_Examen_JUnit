@@ -103,7 +103,7 @@ public class InputFormUtil extends  SetUp{
 
             case "Your_message": {
                 waitUntilVisibility(iform.yourMessage);
-                if (getTextFromExcel("C:\\Users\\Yulia\\IdeaProjects\\Demo_Examen_JUnit\\src\\test\\java\\resources\\testData\\data1.xlsx", "dataSource", 1,0).equals(getText(iform.yourMessage)))
+                if (getTextFromExcel("src\\test\\java\\resources\\testData\\data1.xlsx", "dataSource", 1,0).equals(getText(iform.yourMessage)))
                      {status = true;}
                 else {status = false;}
                 printToLogFile("\tText matches: ", Boolean.toString(status));
@@ -112,7 +112,7 @@ public class InputFormUtil extends  SetUp{
             case "Total_a_plus_b":
             {
                 waitUntilVisibility(iform.total);
-                String sum1= String.valueOf(getNumberFromExcel("C:\\Users\\Yulia\\IdeaProjects\\Demo_Examen_JUnit\\src\\test\\java\\resources\\testData\\data2.xlsx", "Sheet1", 1, 2));
+                String sum1= String.valueOf(getNumberFromExcel("src\\test\\java\\resources\\testData\\data2.xlsx", "Sheet1", 1, 2));
                 printToLogFile("\tSumma: ", sum1);
                 String sum2 = getText(iform.total);
                 if (sum1.equals(sum2)) {status = true;}
@@ -130,21 +130,21 @@ public class InputFormUtil extends  SetUp{
         switch (elementName) {
             case "Please_enter_your_message": {
                 waitUntilVisibility(iform.enterMessage);
-                String single_message = getTextFromExcel("C:\\Users\\Yulia\\IdeaProjects\\Demo_Examen_JUnit\\src\\test\\java\\resources\\testData\\data1.xlsx", "dataSource", 1, 0);
+                String single_message = getTextFromExcel("src\\test\\java\\resources\\testData\\data1.xlsx", "dataSource", 1, 0);
                 sendKeys(iform.enterMessage, single_message);
                 printToLogFile("\tText sent to the text box: ", single_message);
                 break;
             }
             case "Enter_value_for_a": {
                 waitUntilVisibility(iform.valueA);
-                int a = getNumberFromExcel("C:\\Users\\Yulia\\IdeaProjects\\Demo_Examen_JUnit\\src\\test\\java\\resources\\testData\\data2.xlsx", "Sheet1", 1, 0);
+                int a = getNumberFromExcel("src\\test\\java\\resources\\testData\\data2.xlsx", "Sheet1", 1, 0);
                 sendKeys(iform.valueA, String.valueOf(a));
                 printToLogFile("\tText sent to the text box: ", String.valueOf(a));
                 break;
             }
             case "Enter_value_for_b": {
                 waitUntilVisibility(iform.valueA);
-                int a = getNumberFromExcel("C:\\Users\\Yulia\\IdeaProjects\\Demo_Examen_JUnit\\src\\test\\java\\resources\\testData\\data2.xlsx", "Sheet1", 1, 1);
+                int a = getNumberFromExcel("src\\test\\java\\resources\\testData\\data2.xlsx", "Sheet1", 1, 1);
                 sendKeys(iform.valueB, String.valueOf(a));
                 printToLogFile("\tText sent to the text box: ", String.valueOf(a));
                 break;
