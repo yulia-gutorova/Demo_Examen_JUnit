@@ -46,7 +46,7 @@ public class Listener extends RunListener{
     //Called before any tests have been run.
     @Override
     public void testRunStarted(Description description) throws Exception {
-        //System.out.println( "\nTests run  " + description.getClassName());
+        System.out.println( "\nTests run  " + description.getClassName());
         write_to_file.println("\nTests run  " + description.getClassName());
     }
 
@@ -57,6 +57,9 @@ public class Listener extends RunListener{
     {
         write_to_file.println("\nClass: >>>>> " + description.getClassName());
         write_to_file.println("\n     Test started: >>>>> " + description.getDisplayName());
+        System.out.println("\nClass: >>>>> " + description.getClassName());
+        System.out.println("\n     Test started: >>>>> " + description.getDisplayName());
+
     }
 
     //-----------------------------------------------------------------
@@ -66,6 +69,8 @@ public class Listener extends RunListener{
 
         write_to_file.println( "     Tests finished ");
         write_to_file.println("--------------------------------------");
+        System.out.println( "     Tests finished ");
+        System.out.println("--------------------------------------");
     }
 
     //-----------------------------------------------------------------
@@ -74,6 +79,7 @@ public class Listener extends RunListener{
     public void testFailure (Failure failure) throws Exception
     {
         write_to_file.println("\n>>>>> Tests failure  "  + failure );
+        System.out.println("\n>>>>> Tests failure  "  + failure );
     }
 
     //-----------------------------------------------------------------
@@ -82,6 +88,8 @@ public class Listener extends RunListener{
     public void testIgnored(Description description) throws Exception {
         write_to_file.println(">>>>> Tests disabled: "+ description );
         write_to_file.println("--------------------------------------");
+        System.out.println(">>>>> Tests disabled: "+ description );
+        System.out.println("--------------------------------------");
     }
 
     //-----------------------------------------------------------------
@@ -100,11 +108,11 @@ public class Listener extends RunListener{
         write_to_file.println( "Ignored count: "  + result.getIgnoreCount() );
 
         write_to_file.close();
-/*
+
         System.out.println( "\nResult of the test run: "+ result.wasSuccessful() );
         System.out.println("Run time: " + result.getRunTime() + " ms");
         System.out.println("Number od tests executed: "+ result.getRunCount());
         System.out.println("Failure count: " + result.getFailureCount() );
-        System.out.println("Ignored count: "  + result.getIgnoreCount() );*/
+        System.out.println("Ignored count: "  + result.getIgnoreCount() );
     }
 }
